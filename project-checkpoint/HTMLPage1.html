@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <script defer src="projectJS.js"></script>
+</head>
+<body>
+
+  
+    <div class="banner">
+        <img src="my_banner.png" alt="My Banner" width="1250" height="300">
+        <p><strong>Elham Jahandideh | WEB-115 | Section: 0006 </strong></p>
+    </div>
+
+    <form id="mealPlanForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="goal">Weekly Goal:</label>
+        <input type="text" id="goal" required>
+
+        
+        <div class="meal-plan">
+            <h2>Meal Plan for the Week</h2>
+
+            <div id="mealInputs"></div>
+        </div>
+        <!--<br />
+        <br />-->
+
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="button" onclick="clearMealPlan()">Clear Planner</button>
+        <button type="button" onclick="printMealPlan()">Print Planner</button>
+        <button type="button" onclick="downloadMealPlan()">Download Planner</button>
+    </form>
+
+</body>
+</html>
